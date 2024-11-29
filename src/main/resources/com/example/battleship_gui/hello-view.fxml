@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.battleship_gui.GameController">
+   <children>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="17.0" prefWidth="388.0" text="                                                 BATTLESHIP" textAlignment="CENTER" />
+      <GridPane fx:id="agp" gridLinesVisible="true" layoutX="105.0" layoutY="54.0" onMouseClicked="#btnAttackShipsClicked" prefHeight="219.0" prefWidth="228.0" style="-fx-background-color: LIGHTBLUE;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="a00" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Pane fx:id="a10" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Pane fx:id="a20" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Pane fx:id="a30" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Pane fx:id="a40" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <Pane fx:id="a50" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <Pane fx:id="a60" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            <Pane fx:id="a70" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+            <Pane fx:id="a80" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+            <Pane fx:id="a90" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+            <Pane fx:id="a01" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Pane fx:id="a11" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane fx:id="a21" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane fx:id="a31" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane fx:id="a41" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Pane fx:id="a51" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Pane fx:id="a61" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Pane fx:id="a71" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Pane fx:id="a81" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Pane fx:id="a91" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Pane fx:id="a02" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Pane fx:id="a12" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane fx:id="a22" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane fx:id="a32" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane fx:id="a42" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Pane fx:id="a52" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Pane fx:id="a62" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Pane fx:id="a72" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Pane fx:id="a82" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Pane fx:id="a92" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Pane fx:id="a03" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Pane fx:id="a13" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane fx:id="a23" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane fx:id="a33" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane fx:id="a43" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Pane fx:id="a53" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Pane fx:id="a63" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Pane fx:id="a73" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Pane fx:id="a83" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Pane fx:id="a93" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Pane fx:id="a04" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Pane fx:id="a14" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane fx:id="a24" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Pane fx:id="a34" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane fx:id="a44" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Pane fx:id="a54" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Pane fx:id="a64" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Pane fx:id="a74" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Pane fx:id="a84" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Pane fx:id="a94" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Pane fx:id="a05" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Pane fx:id="a15" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Pane fx:id="a25" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Pane fx:id="a35" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Pane fx:id="a45" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Pane fx:id="a55" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Pane fx:id="a65" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Pane fx:id="a75" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Pane fx:id="a85" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Pane fx:id="a95" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Pane fx:id="a06" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Pane fx:id="a16" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Pane fx:id="a26" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Pane fx:id="a36" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Pane fx:id="a46" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Pane fx:id="a56" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Pane fx:id="a66" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Pane fx:id="a76" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Pane fx:id="a86" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Pane fx:id="a96" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Pane fx:id="a07" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Pane fx:id="a17" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Pane fx:id="a27" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Pane fx:id="a37" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Pane fx:id="a47" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Pane fx:id="a57" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Pane fx:id="a67" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Pane fx:id="a77" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Pane fx:id="a87" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Pane fx:id="a97" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Pane fx:id="a08" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <Pane fx:id="a18" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Pane fx:id="a28" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Pane fx:id="a38" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Pane fx:id="a48" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Pane fx:id="a58" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Pane fx:id="a68" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Pane fx:id="a78" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Pane fx:id="a88" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Pane fx:id="a98" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Pane fx:id="a09" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <Pane fx:id="a19" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Pane fx:id="a29" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Pane fx:id="a39" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Pane fx:id="a49" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Pane fx:id="a59" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Pane fx:id="a69" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Pane fx:id="a79" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Pane fx:id="a89" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Pane fx:id="a99" onMouseClicked="#btnAttackShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="sgp" gridLinesVisible="true" layoutX="105.0" layoutY="310.0" prefHeight="219.0" prefWidth="228.0" style="-fx-background-color: LIGHTBLUE;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="s00" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Pane fx:id="s10" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Pane fx:id="s20" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Pane fx:id="s301" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Pane fx:id="s401" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <Pane fx:id="s501" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <Pane fx:id="s601" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            <Pane fx:id="s701" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+            <Pane fx:id="s801" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+            <Pane fx:id="s901" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+            <Pane fx:id="s011" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Pane fx:id="s111" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane fx:id="s211" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane fx:id="s311" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane fx:id="s411" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Pane fx:id="s511" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Pane fx:id="s611" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Pane fx:id="s711" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Pane fx:id="s811" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Pane fx:id="s911" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Pane fx:id="s021" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Pane fx:id="s121" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane fx:id="s221" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane fx:id="s321" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane fx:id="s421" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Pane fx:id="s521" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Pane fx:id="s621" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Pane fx:id="s721" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Pane fx:id="s821" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Pane fx:id="s921" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Pane fx:id="s031" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Pane fx:id="s131" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane fx:id="s231" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane fx:id="s331" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane fx:id="s431" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Pane fx:id="s531" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Pane fx:id="s631" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Pane fx:id="s731" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Pane fx:id="s831" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Pane fx:id="s931" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Pane fx:id="s041" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Pane fx:id="s141" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane fx:id="s241" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Pane fx:id="s341" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane fx:id="s441" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Pane fx:id="s541" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Pane fx:id="s641" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Pane fx:id="s741" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Pane fx:id="s841" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Pane fx:id="s941" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Pane fx:id="s051" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Pane fx:id="s151" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Pane fx:id="s251" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Pane fx:id="s351" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Pane fx:id="s451" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Pane fx:id="s551" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Pane fx:id="s651" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Pane fx:id="s751" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Pane fx:id="s851" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Pane fx:id="s951" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Pane fx:id="s061" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Pane fx:id="s161" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Pane fx:id="s261" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Pane fx:id="s361" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Pane fx:id="s461" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Pane fx:id="s561" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Pane fx:id="s661" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Pane fx:id="s761" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Pane fx:id="s861" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Pane fx:id="s961" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Pane fx:id="s071" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Pane fx:id="s171" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Pane fx:id="s271" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Pane fx:id="s371" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Pane fx:id="s471" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Pane fx:id="s571" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Pane fx:id="s671" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Pane fx:id="s771" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Pane fx:id="s871" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Pane fx:id="s971" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Pane fx:id="s081" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <Pane fx:id="s181" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Pane fx:id="s281" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Pane fx:id="s381" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Pane fx:id="s481" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Pane fx:id="s581" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Pane fx:id="s681" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Pane fx:id="s781" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Pane fx:id="s881" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Pane fx:id="s981" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Pane fx:id="s091" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <Pane fx:id="s191" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Pane fx:id="s291" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Pane fx:id="s391" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Pane fx:id="s491" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Pane fx:id="s591" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Pane fx:id="s691" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Pane fx:id="s791" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Pane fx:id="s891" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Pane fx:id="s991" onMouseClicked="#btnPlaceShipsClicked" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <Text layoutX="449.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controls" underline="true" wrappingWidth="60.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="385.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Left Mouse Click - Vertical" wrappingWidth="178.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="373.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Right Mouse Click - Horizontal" wrappingWidth="212.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="455.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ships" underline="true" wrappingWidth="38.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="385.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESTROYER - Size 2" wrappingWidth="178.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="385.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBMARINE - Size 3" wrappingWidth="178.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="385.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BATTLESHIP - Size 4" wrappingWidth="178.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="385.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARRIER - Size 5" wrappingWidth="178.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="385.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PATROLBOAT - Size 3" wrappingWidth="178.13671875">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
